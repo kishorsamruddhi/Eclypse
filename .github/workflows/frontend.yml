@@ -31,8 +31,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output exists
+        run: ls -al build
+
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: frontend-build
-          path: frontend/build
+          path: build
