@@ -95,12 +95,12 @@ Deployment
 The website is deployed live with the following setup:
 
 Frontend: Hosted on Vercel.
-URL: https://your-frontend-url.vercel.app (replace with your actual URL).
+URL: https://eclypse-ecommerce.vercel.app/
 Automated deployment pipeline: Pushes to the main branch trigger a new deployment on Vercel.
 
 
 Backend: Hosted on Render.
-URL: https://your-backend-url.onrender.com (replace with your actual URL).
+URL: https://eclypse-ecommerce.onrender.com
 Environment variables are set in Render’s dashboard (e.g., MONGODB_URI).
 Automated deployment pipeline: Pushes to the main branch trigger a new deployment on Render.
 
@@ -129,6 +129,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Contact
 For questions or feedback, feel free to reach out:
 
-GitHub: your-username
-Email: your-email@example.com
+GitHub: Aadarsh-2912
+Email: aadarshanand2912@gmail.com
 
