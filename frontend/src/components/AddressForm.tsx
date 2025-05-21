@@ -14,7 +14,7 @@ interface AddressFormProps {
   onAddressSelect: (address: Address) => void;
 }
 
-const AddressForm: React.FC<AddressFormProps> = ({ onAddressSelect }) => {
+const AddressForm: React.FC<AddressFormProps> = ({ onAddressSelect }) => { 
   const [formType, setFormType] = useState<"new" | "saved">("new");
   const [formData, setFormData] = useState<Address>({
     firstName: "",
