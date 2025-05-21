@@ -39,25 +39,6 @@ Other Tools:
 GitHub Actions or Vercel/Render Pipelines: For automated deployment.
 
 
-
-Project Structure
-eclypse-ecommerce/
-├── client/                  # Frontend (React)
-│   ├── src/
-│   │   ├── components/      # Reusable components (e.g., Navbar, Footer)
-│   │   ├── pages/           # Page components (e.g., ProductCatalog, Cart, Checkout)
-│   │   ├── assets/          # Static assets (images, videos)
-│   │   ├── App.jsx          # Main App component
-│   │   └── index.jsx        # Entry point
-├── server/                  # Backend (Node.js/Express)
-│   ├── routes/              # API routes (e.g., products, addresses)
-│   ├── models/              # MongoDB models (e.g., Product, Address)
-│   ├── controllers/         # Route handlers
-│   ├── middleware/          # Custom middleware (if any)
-│   └── server.js            # Entry point for the backend
-├── README.md                # Project documentation
-└── package.json             # Project dependencies and scripts
-
 Setup Instructions
 Prerequisites
 
