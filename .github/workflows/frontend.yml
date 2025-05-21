@@ -1,41 +1,17 @@
-name: Frontend CI
+name: Artifact Upload Test
 
-on:
-  push:
-    paths:
-      - 'frontend/**'
-  pull_request:
-    paths:
-      - 'frontend/**'
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: frontend
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - name: Create file
+        run: |
+          mkdir -p out && echo "Hello" > out/test.txt
+      - name: Upload
+        uses: actions/upload-artifact@v3
         with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Verify build output exists
-        run: ls -al build
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: frontend-build
-          path: build
+          name: test-artifact
+          path: out/test.txt
