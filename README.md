@@ -49,7 +49,7 @@ MongoDB (local or cloud instance, e.g., MongoDB Atlas)
 Installation
 
 Clone the Repository:
-git clone https://github.com/your-username/eclypse-ecommerce.git
+git clone https://github.com/Aadarsh-2912/Eclypse-Ecommerce.git
 cd eclypse-ecommerce
 
 
