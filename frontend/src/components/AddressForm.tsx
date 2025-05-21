@@ -36,7 +36,7 @@ const AddressForm: React.FC<AddressFormProps> = ({ onAddressSelect }) => {
   const fetchSavedAddresses = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/addresses");
+      const res = await fetch("https://eclypse-ecommerce.onrender.com/api/addresses");
       const data = await res.json();
       setSavedAddresses(data);
     } catch (err) {
@@ -53,7 +53,7 @@ const AddressForm: React.FC<AddressFormProps> = ({ onAddressSelect }) => {
 
   const handleSaveAddress = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/addresses", {
+      const res = await fetch("https://eclypse-ecommerce.onrender.com/api/addresses", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
