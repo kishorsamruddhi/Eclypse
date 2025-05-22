@@ -153,32 +153,6 @@ Frontend will be available at: `http://localhost:3000`
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots to demonstrate key features by uploading them to your repo and embedding them here using Markdown image tags.)
-
-- **Product Catalog Page**
-
-- **Cart Page**
-
-- **Checkout Page**
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repo
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Make changes and commit: `git commit -m "Add your feature"`
-4. Push to your branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-Make sure to follow the coding guidelines and include appropriate test coverage.
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
