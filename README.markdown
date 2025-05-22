@@ -1,6 +1,6 @@
 # Eclypse E-Commerce Website
 
-Eclypse is a fully functional e-commerce website built from scratch, offering a seamless shopping experience. Users can browse products, manage their cart, and proceed to checkout. The project utilizes a modern tech stack to ensure performance, scalability, and responsive design. Both the frontend and backend are deployed and live for public access.
+This is a fully functional e-commerce website built from scratch, offering a seamless shopping experience. Users can browse products, manage their cart, and proceed to checkout. The project utilizes a modern tech stack to ensure performance, scalability, and responsive design. Both the frontend and backend are deployed and live for public access.
 
 ---
 
