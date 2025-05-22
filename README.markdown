@@ -9,18 +9,6 @@ Eclypse is a fully functional e-commerce website built from scratch, offering a 
 Explore the website here:  
 https://eclypse-ecommerce.vercel.app/
 
-> **Note:** Login with the following credentials to access features like cart management and checkout.
-
-### Login Credentials
-
-- **Admin Login** (for managing products/orders):  
-  - **Email:** `admin1@example.com`  
-  - **Password:** `AdminPass123`
-
-- **User Login** (for cart and checkout):  
-  - **Email:** `ali.khan@example.com`  
-  - **Password:** `StrongPass123`
-
 ---
 
 ## ✅ Features
