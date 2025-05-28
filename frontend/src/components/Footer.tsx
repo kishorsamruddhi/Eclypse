@@ -4,7 +4,7 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-black text-white px-6 py-8 border-t border-gray-700">
+    <footer className="bg-white text-black dark:bg-black dark:text-white px-6 py-8 border-t border-gray-300 dark:border-gray-700 transition-colors duration-300">
       {/* Always 3 columns, even on mobile */}
       <div className="grid grid-cols-3 gap-4 text-sm">
         
@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex justify-end items-start">
           <button
             onClick={scrollToTop}
-            className="w-10 h-10 rounded-full bg-white text-black font-bold text-lg flex items-center justify-center hover:scale-110 transition"
+            className="w-10 h-10 rounded-full bg-black text-white dark:bg-white dark:text-black font-bold text-lg flex items-center justify-center hover:scale-110 transition"
             aria-label="Back to top"
           >
             ↑
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+      <div className="mt-6 pt-4 border-t border-gray-300 dark:border-gray-700 text-center text-xs">
         © 2025 Eclypse. All rights reserved.
       </div>
     </footer>

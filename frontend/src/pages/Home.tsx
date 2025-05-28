@@ -5,10 +5,11 @@ import Product from "../components/Product";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import ProductCatalog from "../components/ProductCatalog";
+import Chatbot from "../components/Chatbot";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white font-sans px-6 sm:px-8 md:px-12 lg:px-20">
+    <div className="transition-colors duration-300 min-h-screen flex flex-col bg-white text-black dark:bg-black dark:text-white">
       <Navbar />
       <Hero />
       <Gallery />
@@ -16,6 +17,7 @@ const Home = () => {
       <ProductCatalog />
       <Testimonials />
       <Footer />
+      <Chatbot />
     </div>
   );
 };

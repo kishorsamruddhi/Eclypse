@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AddressForm, { Address } from "../components/AddressForm";
 
-const Checkout = () => {
+const Checkout: React.FC = () => {
   const navigate = useNavigate();
   const [selectedAddress, setSelectedAddress] = useState<Address | null>(null);
 
@@ -12,9 +12,7 @@ const Checkout = () => {
 
   return (
     <section className="flex flex-col md:flex-row items-start p-8 gap-8 bg-white min-h-screen">
-      {/* Left - Address Section */}
       <div className="flex-1">
-        {/* Header with back button */}
         <div
           className="flex items-center mb-4 cursor-pointer"
           onClick={() => navigate("/")}
@@ -28,7 +26,6 @@ const Checkout = () => {
         <AddressForm onAddressSelect={handleAddressSelect} />
       </div>
 
-      {/* Right - Order Info */}
       <div className="flex-1 self-start bg-white mt-8 border border-gray-300 rounded-lg p-6 md:p-12">
         <p className="text-black text-lg md:text-xl mb-6 md:mb-8">
           By placing your order, you agree to our company Privacy policy and

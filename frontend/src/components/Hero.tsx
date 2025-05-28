@@ -43,10 +43,16 @@ const Hero = () => (
             href="#"
             className="mt-16 inline-block text-left text-base sm:text-3xl underline font-light tracking-tight transition-all duration-300 hover:bg-white hover:scale-105 hover:text-black px-2 py-1 rounded"
         >
-        <span className="group relative inline-block">
-            Learn more from Eclypse
-            <span className="inline-block transition-opacity duration-300 group-hover:opacity-0"> →</span>
-        </span>
+     <span className="group relative inline-block border-b-2 border-white pb-0.5">
+  Learn more from Eclypse
+  <span className="inline-block transition-opacity duration-300 group-hover:opacity-0"> →</span>
+
+  {/* Northeast tilted arrow (↗) appears on hover */}
+  <span className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full opacity-0 group-hover:opacity-100 transition-all duration-300 text-white rotate-45">
+    ↗
+  </span>
+</span>
+
         </a>
 
     </div>

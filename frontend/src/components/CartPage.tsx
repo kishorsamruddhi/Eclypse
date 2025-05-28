@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Define the type for cart items
 interface CartItem {
   id: number;
   name: string;
@@ -10,21 +9,18 @@ interface CartItem {
   quantity: number;
 }
 
-const CartPage = () => {
+const CartPage: React.FC = () => {
   const navigate = useNavigate();
 
-  // Initial cart items state
   const [cartItems, setCartItems] = useState<CartItem[]>([
     { id: 1, name: "Silhouette No. 1", color: "Vermilion", price: 7999, quantity: 1 },
   ]);
 
-  // Calculate total price
-  const calculateTotal = () => {
+  const calculateTotal = (): number => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
-  // Handle quantity increase
-  const handleIncreaseQuantity = (id: number) => {
+  const handleIncreaseQuantity = (id: number): void => {
     setCartItems(
       cartItems.map((item) =>
         item.id === id ? { ...item, quantity: item.quantity + 1 } : item
@@ -32,8 +28,7 @@ const CartPage = () => {
     );
   };
 
-  // Handle quantity decrease
-  const handleDecreaseQuantity = (id: number) => {
+  const handleDecreaseQuantity = (id: number): void => {
     setCartItems(
       cartItems.map((item) =>
         item.id === id && item.quantity > 1
@@ -43,16 +38,13 @@ const CartPage = () => {
     );
   };
 
-  // Handle item removal
-  const handleRemoveItem = (id: number) => {
+  const handleRemoveItem = (id: number): void => {
     setCartItems(cartItems.filter((item) => item.id !== id));
   };
 
   return (
     <section className="flex flex-col lg:flex-row items-start p-4 md:p-8 gap-6 bg-white min-h-screen">
-      {/* Left - Cart Items Section */}
       <div className="w-full lg:flex-1">
-        {/* Header with back button */}
         <div
           className="flex items-center mb-4 cursor-pointer"
           onClick={() => navigate("/")}
@@ -61,7 +53,6 @@ const CartPage = () => {
           <h3 className="text-xl font-semibold text-gray-800">Your Cart</h3>
         </div>
 
-        {/* Cart Items */}
         {cartItems.length === 0 ? (
           <p className="text-lg text-gray-600">Your cart is empty.</p>
         ) : (
@@ -104,7 +95,6 @@ const CartPage = () => {
         )}
       </div>
 
-      {/* Right - Cart Summary */}
       <div className="w-full lg:flex-1 bg-white border border-gray-300 rounded-lg p-6 md:p-12 mt-8 lg:mt-0">
         <h3 className="text-black text-2xl md:text-3xl font-bold mb-4 md:mb-6">
           Cart Summary
