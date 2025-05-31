@@ -7,7 +7,7 @@ This is a fully functional e-commerce website built from scratch, offering a sea
 ## 🚀 Live Demo
 
 Explore the website here:  
-https://eclypse-ecommerce.vercel.app/
+[https://eclypse-ecommerce.vercel.app/](https://eclypse-ecommerce-kishorsamruddhi-samruddhis-projects-443f0d6e.vercel.app/)
 
 ---
 
@@ -63,91 +63,3 @@ eclypse-ecommerce/
 ├── README.md                # Project documentation
 └── package.json             # Root dependencies and scripts
 ```
-
----
-
-## ⚙️ Setup Instructions
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- MongoDB (local or MongoDB Atlas)
-
-### Installation
-
-#### Clone the Repository
-
-```bash
-git clone https://github.com/Aadarsh-2912/Eclypse-Ecommerce.git
-cd eclypse-ecommerce
-```
-
-#### Set Up the Backend
-
-```bash
-cd server
-npm install
-```
-
-Create a `.env` file in the `server/` directory:
-
-```
-PORT=5000
-MONGODB_URI=your-mongodb-connection-string
-```
-
-Start the server:
-
-```bash
-npm run start
-```
-
-Server will run at: `http://localhost:5000`
-
-#### Set Up the Frontend
-
-```bash
-cd client
-npm install
-npm run start
-```
-
-Frontend will be available at: `http://localhost:3000`
-
-> **Note:** Make sure the backend server is running to enable API data fetching.
-
----
-
-## 📡 API Endpoints
-
-- `GET /api/products` – Retrieve all products
-- `GET /api/addresses` – Get saved addresses (for Checkout)
-- `POST /api/addresses` – Submit a new address
-
----
-
-## 🌐 Deployment
-
-### Frontend
-- **Host**: Vercel
-- **Live URL**: https://eclypse-ecommerce.vercel.app/
-- **CI/CD**: Pushes to `main` branch trigger redeployments
-
-### Backend
-- **Host**: Render
-- **Live URL**: https://eclypse-ecommerce.onrender.com
-- **Environment Variables**: Configured via Render dashboard (e.g., `MONGODB_URI`)
-- **CI/CD**: Auto-deployment on push to `main`
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
-
----
-
-## 📬 Contact
-
-- **GitHub:** [Aadarsh-2912](https://github.com/Aadarsh-2912)
-- **Email:** aadarshanand2912@gmail.com
